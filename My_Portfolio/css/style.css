@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(28, 37, 65);
+    font-family: 'Ubuntu',sans-serif,'Times New Roman', Times, serif;
+    color: white
+}
+
+/* styling for navigation bar */
+
+.nav-bar{
+    display: flex;
+    height: 85px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(11, 19, 43);
+}
+
+.nav-bar ul{
+    display: flex;
+    
+}
+
+.nav-bar-list li{
+    margin: 0px 30px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-bar-list li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar-list li a:hover{
+    color: rgb(77, 86, 139);
+    font-size: 1.05rem;
+}
+
+.left-nav{
+    font-size: 20px;
+}
+
+.hamburger{
+    position: absolute;
+    top: 23px;
+    right: 4%;
+    cursor: pointer;
+    display: none;   
+}
+
+
+.line{
+    height: 4px;
+    width: 35px;
+    background-color: white;
+    margin: 6px 3px;
+}
+
+/* Styling for home page */
+
+.first{
+    display: flex;
+    margin: 70px 0px ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first > div{
+    width: 30%;
+}
+
+.left{
+    width: 35px;
+    font-size: 2.5rem;
+    margin: 70px 0px;
+}
+
+.right{
+    width: 80%;
+}
+
+.descr{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+img{
+    /* border: 5px solid rgb(255, 255, 255); */
+    border-radius: 50%;
+    box-shadow: 0px 2px 60px 16px rgb(255, 255, 255);
+
+}
+
+.name{
+    color: rgb(89, 91, 168);
+}
+
+.btn{
+    width: 40%;
+    font-size: 17px;
+    border: 2px solid rgb(172, 167, 167);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgb(137, 136, 173);
+    margin: 40px 0px;
+    padding: 5px;
+    background-color: rgb(215, 215, 215);
+    font-family: 'Ubuntu',sans-serif,'Times New Roman', Times, serif;
+}
+
+.btn:hover{
+    background-color: rgba(28, 37, 65);
+    color: white;
+}
+
+/* Styling for About section */
+
+.about-heading{
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    color: rgb(87, 111, 162);
+    font-family: 'Ubuntu',sans-serif,'Times New Roman', Times, serif;
+
+}
+
+.about-container{
+    margin: 30px 30px;
+}
+
+.about-content{
+    font-size: 18px;
+}
+
+.tab-title{
+    display: flex;
+    margin: 30px 0 30px;
+    /* justify-content: center; */
+}
+
+.tab-link{
+    margin-right: 70px;
+    font-size: 20px;
+    color: rgb(87, 111, 162);
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+}
+
+.tab-link::after{
+    width: 0;
+    height: 3px;
+    content: "";
+    background-color: bisque;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.tab-link.active-link::after{
+    width: 100%;
+}
+
+.tab-content ul li {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active-tab{
+    display: block;
+}
+
+span{
+    color: rgb(67, 91, 112);
+}
+
+
+/* Styling for project section */
+
+.my-proj{
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    font-family: 'Ubuntu',sans-serif,'Times New Roman', Times, serif;
+
+}
+
+.projects-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #d2d2e8;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #4b4571;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: rgb(97, 108, 142);;
+  margin: 10px 0 20px;
+}
+
+.project-card a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #254365;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: rgb(36, 26, 95);
+
+}
+
+/* styling for contact form */
+
+.contact{
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    font-family: 'Ubuntu',sans-serif,'Times New Roman', Times, serif;
+
+}
+
+.info{
+    margin: 42px auto;
+    max-width: 60%;
+}
+
+label{
+    font-size: 20px;
+}
+
+.form-element{
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 20px 0px;
+    padding: 5px 10px;
+    font-family: 'Ubuntu',sans-serif,'Times New Roman', Times, serif;
+    /* text-align: center; */
+}
+
+.submit{
+    width: 40%;
+    font-size: 20px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 30px 0px;
+    padding: 5px 10px;
+    background-color: rgb(215, 215, 215);
+    font-family: 'Ubuntu',sans-serif,'Times New Roman', Times, serif;
+}
+
+.submit:hover{
+    background-color: rgba(28, 37, 65);
+    color: white;
+}
+
+/* styling for responsiveness */
+
+@media screen and (max-width: 1100px) {
+    .nav-bar{
+        flex-direction: column;
+        height: 300px;
+        transition: all 0.6s ease-out;
+
+    }
+
+    .left-nav{
+        position: absolute;
+        top: 15px;
+        left: 4%;
+        display: block;
+    }
+
+    .nav-bar-list{
+        flex-direction: column;
+    }
+
+    .nav-bar-list li{
+        padding: 10px;
+        /* margin-top: 0px; */
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .nav-height{
+        height: 70px;
+    }
+
+    .visible{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .first{
+        flex-direction: column-reverse;
+        /* width: 100%; */
+        /* margin: 0; */
+        /* padding: 0px; */
+    }
+
+    .first > div{
+        width: 80%;
+    }
+
+    .right {
+        margin-left: 150px;
+    }
+}

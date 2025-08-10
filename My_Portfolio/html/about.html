@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi's Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar nav-height">
+            <div class="left-nav">Sakshi's Portfolio</div>
+            <div class="right-nav">
+                <ul class="nav-bar-list visible">
+                    <li><a href="./index.html">Home</a></li>   
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./project.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>  
+                </ul>
+            </div>
+
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+         </nav>
+
+     </header>
+     
+     <main>
+        <section class="about-sec">
+            <div class="about-container">
+                    <h1 class="about-heading">About Me</h1>
+
+                    <div class="about-content">
+                        Hi, I'm a creative Web Developer who loves building beautiful and functional websites using HTML, CSS, and JavaScript. Even though I'm at the beginning of my journey, I'm constantly exploring new ideas, improving my skills, and turning concepts into interactive experiences. I believe every pixel matters, and my aim is to craft designs that not only look great but also feel smooth to use on any device.
+
+                    </div>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>ReactJs</li>
+                            <li>MySQL</li>
+                            <li>NodeJs</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2022 - 2026</span><br>B.Tech from Dr. KN Modi Institute Of Engineering And Technology</li>
+                            <li><span>2022 </span><br>12th from BBS Pratapgarh</li>
+                            <li><span>2020</span><br>Quddushi Samajik V Inter College, Prayagraj</li>
+            
+                        </ul>
+                    </div>
+            </div>
+
+        </section>
+     </main>
+
+
+
+     <script src="/JS/script.js"></script>
+
+</body>
+</html>
